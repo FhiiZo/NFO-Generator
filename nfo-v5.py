@@ -104,19 +104,6 @@ def generate_nfo(file_path):
     """
     try:
         media_info = MediaInfo.parse(file_path)
-        nfo_content = [
-                """
-d8888b. d88888b d8888b. d888888b d8888b. d888888b db   db
-88  `8D 88'     88  `8D   `88'   88  `8D `~~88~~' 88   88
-88oobY' 88ooooo 88oooY'    88    88oobY'    88    88ooo88
-88`8b   88~~~~~ 88~~~b.    88    88`8b      88    88~~~88
-88 `88. 88.     88   8D   .88.   88 `88.    88    88   88
-88   YD Y88888P Y8888P' Y888888P 88   YD    YP    YP   YP
----------------------------------------------------------- 
-|                     Présente                           |
-----------------------------------------------------------
-                """
-                ]
 
         # Nom du fichier et détection du film
         file_name = os.path.basename(file_path)
